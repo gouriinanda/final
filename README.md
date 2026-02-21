@@ -19,7 +19,7 @@
 Gapify is a structured career re-entry platform designed exclusively for professionals returning after a career break of one year or more. By providing classes, hands-on projects and notifying on recruitement calls.
 
 ### The Problem statement
- Experienced professionals who take a career break of one year or more struggle to re-enter fast-evolving technical fields because their skills may be outdated, their confidence reduced, and there is no structured, domain-specific pathway designed specifically for their comeback.
+ Experienced professionals who take a career break of one year or more struggle to re-enter fast-evolving  fields because their skills may be outdated, their confidence reduced, and there is no structured, domain-specific pathway designed specifically for their comeback.
 
 
 ### The Solution
