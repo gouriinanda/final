@@ -50,7 +50,7 @@ def logout():
 @app.route("/ai")
 def ai():
     return render_template("ai.html")
-@app.route("/jobs")
+
 @app.route("/jobs")
 def jobs():
     return render_template("job.html")
