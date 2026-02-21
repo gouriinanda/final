@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Portal - Gapify</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 900px;
+            margin: 40px auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .search-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .search-box input {
+            width: 70%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .job-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .job-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .company {
+            color: gray;
+            margin-bottom: 10px;
+        }
+
+        .job-details {
+            margin: 10px 0;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #eef2ff;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            margin-right: 5px;
+        }
+
+        .apply-btn {
+            margin-top: 15px;
+            padding: 8px 15px;
+            background-color: #4f46e5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .apply-btn:hover {
+            background-color: #4338ca;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Explore Career Opportunities</h2>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search by role, company, or keyword...">
+    </div>
+
+    <!-- Job 1 -->
+    <div class="job-card">
+        <div class="job-title">Frontend Developer (Re-Entry)</div>
+        <div class="company">TechNova Solutions</div>
+
+        <div class="job-details">
+            <span class="tag">Remote</span>
+            <span class="tag">₹8–12 LPA</span>
+            <span class="tag">Full-Time</span>
+        </div>
+
+        <p>Looking for experienced professionals returning after a career break. 
+        Must have prior experience in React or frontend frameworks.</p>
+
+        <button class="apply-btn">Apply Now</button>
+    </div>
+
+    <!-- Job 2 -->
+    <div class="job-card">
+        <div class="job-title">Business Analyst (Career Comeback)</div>
+        <div class="company">GrowthEdge Analytics</div>
+
+        <div class="job-details">
+            <span class="tag">Hybrid</span>
+            <span class="tag">₹6–10 LPA</span>
+            <span class="tag">Full-Time</span>
+        </div>
+
+        <p>Opportunity for professionals resuming careers. Experience in data 
+        analysis and stakeholder communication required.</p>
+
+        <button class="apply-btn">Apply Now</button>
+    </div>
+
+</div>
+
+</body>
+</html>
