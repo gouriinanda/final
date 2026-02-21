@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gappy Chatbot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .chat-container {
+            width: 450px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chat-header {
+            background: linear-gradient(135deg, #4a3aff, #7b5cff);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .chat-header h2 {
+            font-weight: 600;
+        }
+
+        .chat-body {
+            padding: 20px;
+            height: 300px;
+            overflow-y: auto;
+        }
+
+        .bot-message {
+            background-color: #f1f1ff;
+            padding: 12px 15px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .chat-footer {
+            padding: 15px;
+            border-top: 1px solid #eee;
+            display: flex;
+            gap: 10px;
+        }
+
+        .chat-footer input {
+            flex: 1;
+            padding: 12px 15px;
+            border-radius: 25px;
+            border: 1px solid #ddd;
+            outline: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .chat-footer input:focus {
+            border-color: #4a3aff;
+            box-shadow: 0 0 5px rgba(74, 58, 255, 0.3);
+        }
+
+        .chat-footer button {
+            padding: 12px 20px;
+            border-radius: 25px;
+            border: none;
+            background-color: #4a3aff;
+            color: white;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .chat-footer button:hover {
+            background-color: #372bcc;
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="chat-container">
+
+    <div class="chat-header">
+        <h2>Hi! Gappy Here 💬</h2>
+    </div>
+
+    <div class="chat-body">
+        {% if reply %}
+            <div class="bot-message">
+                <strong>Gappy:</strong>
+                <p>{{ reply }}</p>
+            </div>
+        {% else %}
+            <div class="bot-message">
+                Hello! Ask me anything 😊
+            </div>
+        {% endif %}
+    </div>
+
+    <form action="/cb" method="POST" class="chat-footer">
+        <input type="text" name="message" placeholder="Type your message..." required>
+        <button type="submit">Send</button>
+    </form>
+
+</div>
+
+</body>
+</html>

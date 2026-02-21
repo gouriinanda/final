@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GAPIFY | HOME</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+        }
+
+        /* ===== NAVBAR ===== */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+            color: #4a3aff;
+        }
+
+        .nav-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #4a3aff;
+        }
+
+        .btn-signin {
+            padding: 8px 18px;
+            border-radius: 6px;
+            background-color: #4a3aff;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #4a3aff, #7b5cff);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        .hero button {
+            padding: 14px 30px;
+            font-size: 16px;
+            border-radius: 30px;
+            border: none;
+            background-color: white;
+            color: #4a3aff;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero button:hover {
+            transform: scale(1.05);
+            background-color: #f1f1f1;
+        }
+
+        /* ===== FEATURES SECTION ===== */
+        .features {
+            padding: 60px 80px;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            width: 300px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            color: #4a3aff;
+        }
+
+        .feature-card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="logo">GAPIFY</div>
+
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/courses">Courses</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <a href="#" class="btn-signin">Sign In</a>
+    </div>
+
+
+    <!-- HERO BANNER -->
+    <div class="hero">
+        <h1>GAPIFY</h1>
+        <p>Pause Your Career, Not Your Potential.</p>
+       <a href="/signup" class="hero-btn"><button> Get Started </button></a>
+    </div>
+
+
+    <!-- FEATURES SECTION -->
+    <div class="features">
+
+        <div class="feature-card">
+            <h3>Learn</h3>
+            <p>Access powerful learning resources and tools.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Build</h3>
+            <p>Create innovative projects with modern technology.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Grow</h3>
+            <p>Enhance your skills and unlock new opportunities.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

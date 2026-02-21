@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f2f3f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .form-card {
+            background: #ffffff;
+            width: 100%;
+            max-width: 420px;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+        }
+
+        .step {
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: #111;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 6px;
+            margin-top: 18px;
+        }
+
+        .required {
+            color: red;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            border-radius: 12px;
+            border: 1px solid #dcdcdc;
+            background-color: #eef1f6;
+            font-size: 14px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input:focus {
+            border-color: #4a3aff;
+            background-color: #ffffff;
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .row div {
+            flex: 1;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            margin-top: 25px;
+            border-radius: 30px;
+            border: none;
+            background: #111;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        select {
+              width: 100%;
+             padding: 14px 16px;
+             border-radius: 12px;
+             border: none;
+             background: #f3f3f7;
+             font-size: 14px;
+             margin-top: 8px;
+             margin-bottom: 15px;
+             appearance: none;
+             outline: none;
+       }
+
+        button:hover {
+            background: #333;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="form-card">
+
+    <div class="step">Get Started! </div>
+    <div class="title">GAPIFY</div>
+
+    <form method="POST">
+
+        <label>Name <span class="required">*</span></label>
+
+        <div class="row">
+            <div>
+                <input type="text" name="first_name" placeholder="First Name" required>
+            </div>
+            <div>
+                <input type="text" name="last_name" placeholder="Last Name" required>
+            </div>
+        </div>
+
+        <label>Email <span class="required">*</span></label>
+        <input type="email" name="email" placeholder="example@example.com" required>
+
+        <label>Mobile Phone Number</label>
+        <input type="tel" name="phone" placeholder="+91 98765 43210">
+        <label>Area of Study</label>
+        <select name="area_of_study" id="area-of-study">
+            <option value="">Select</option>
+            <option value="computer_science">Computer Science</option>
+            <option value="other">Other</option>
+        </select>
+         <label>Graduation Year</label>
+        <input type="date" name="graduation_year" >
+        <button type="submit">Submit</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

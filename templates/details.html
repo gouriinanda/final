@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GAPIFY | Details</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+        }
+
+        /* ===== NAVBAR ===== */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+            color: #4a3aff;
+        }
+
+        .nav-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #4a3aff;
+        }
+
+        .user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #2563eb;
+}
+
+.username {
+  font-weight: 600;
+  color: #2563eb;
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #4a3aff, #7b5cff);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        .hero button {
+            padding: 14px 30px;
+            font-size: 16px;
+            border-radius: 30px;
+            border: none;
+            background-color: white;
+            color: #4a3aff;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero button:hover {
+            transform: scale(1.05);
+            background-color: #f1f1f1;
+        }
+
+        /* ===== FEATURES SECTION ===== */
+        /* FEATURES SECTION */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 80px 60px;
+}
+
+.feature-card {
+    width: 300px;
+    height: 220px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+        .feature-card {
+           width: 450px;
+           height: 300px;
+           padding: 50px;
+
+           font-size: 20px;
+        }
+
+        .features-card {
+            flex: 1;
+            min-width: 350px;
+        }
+        
+        
+        .feature-card button {
+             background: linear-gradient(135deg, #2563eb, #3b82f6);
+             color: white;
+             border: none;
+             padding: 14px 28px;
+             font-size: 16px;
+             font-weight: 600;
+             border-radius: 10px;
+             cursor: pointer;
+             transition: all 0.3s ease;
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35);
+}
+
+/* Hover effect */
+.feature-card button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.45);
+}
+
+/* Click effect */
+.feature-card button:active {
+  transform: scale(0.97);
+}
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="logo">GAPIFY</div>
+
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/courses">Courses</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+
+   
+        <div class="user-profile">
+    <img src="profile.jpg" class="profile-pic">
+    <div class="dropdown">
+        <span class="username">{{ first }} {{ last }} ▼</span>
+        <div class="dropdown-menu">
+            <a href="/profile">My Profile</a>
+            <a href="/logout">Logout</a>
+        </div>
+    </div>
+</div>
+    </div>
+
+
+
+    <!-- FEATURES SECTION -->
+    <div class="features">
+
+        <div class="feature-card">
+            <h3>ChatBot</h3>
+            <p>Interact with our AI-powered chatbot for instant assistance.</p><br>
+            <a href = "/cb"><button>Click to chat</button></a>
+        </div>
+
+        <div class="feature-card">
+            <h3>COURSES</h3>
+            <p>Browse the latest industry-leading courses.</p><br>
+            <a href="/courses"><button>Explore Courses</button></a>
+
+        </div>
+
+        <div class="feature-card">
+            <h3>Job Opportunities</h3>
+            <p>Explore job opportunities tailored to your skills.</p><br>
+            <button>View Jobs</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
