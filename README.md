@@ -2,27 +2,28 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# GAPIFY 
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: Pink Pixels
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: Sruthy Kanth - Muthoot Institutte of Technology and Science
+- Member 2: Gouri Nanda K G- Muthoot Institutte of Technology and Science
 
 ### Hosted Project Link
 [mention your project hosted link here]
 
 ### Project Description
-[2-3 lines about what your project does]
+Gapify is a structured career re-entry platform designed exclusively for professionals returning after a career break of one year or more. By providing classes, hands-on projects and notifying on recruitement calls.
 
 ### The Problem statement
-[What problem are you solving?]
+ Experienced professionals who take a career break of one year or more struggle to re-enter fast-evolving technical fields because their skills may be outdated, their confidence reduced, and there is no structured, domain-specific pathway designed specifically for their comeback.
+
 
 ### The Solution
-[How are you solving it?]
+Gapify provides a structured re-entry ecosystem exclusively for professionals returning after a career gap of one year or more. It combines domain-specific skill gap analysis, guided resume and confidence support through an interactive chatbot, and hands-on project experiences with simulated job tasks to rebuild technical relevance and professional confidence.
 
 ---
 
@@ -31,25 +32,21 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
-
-**For Hardware:**
-- Main components: [List main components]
-- Specifications: [Technical specifications]
-- Tools required: [List tools needed]
+- Languages used:  html ,python ,css.
+- Frameworks used: Flask.
+- Libraries used: Python-dotenv, Groq SDK
+- Tools used: VS Code, Git, GitHub , Render.
+- API used: Groq
 
 ---
 
 ## Features
 
 List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+- Feature 1: Chatbot -  Gappy helps in providing confidence and also gives insights on current trends in their specific domain.
+- Feature 2: Provides vedio classes and certifications through assesments and assignments.
+- Feature 3: Inclusion of a provision like a job portal which notifies the applicant on different job calls.
+
 
 ---
 
@@ -65,15 +62,7 @@ List the key features of your project:
 #### Run
 ```bash
 [Run commands - e.g., npm start, python app.py]
-```
-
-### For Hardware:
-
-#### Components Required
-[List all components needed with specifications]
-
-#### Circuit Setup
-[Explain how to set up the circuit]
+``
 
 ---
 
@@ -85,12 +74,20 @@ List the key features of your project:
 
 ![Screenshot1](Add screenshot 1 here with proper name)
 *Add caption explaining what this shows*
+<img width="1920" height="1080" alt="Screenshot 2026-02-21 092159" src="https://github.com/user-attachments/assets/1a562a46-e295-48d6-8409-4f8a6e85b68d" />
+home page of Gapify
+
 
 ![Screenshot2](Add screenshot 2 here with proper name)
 *Add caption explaining what this shows*
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/554d4af1-3fba-475b-b6ec-b2a75539213c" />
+Page that offers courses , job opportunities and chatbot.
+
 
 ![Screenshot3](Add screenshot 3 here with proper name)
 *Add caption explaining what this shows*
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9009823a-add9-46ac-8059-efa1826bbb8f" />
+classes available in the portal
 
 #### Diagrams
 
